@@ -5,11 +5,23 @@ html
     body
         h1 Hi Everyone
         p(class='myP', id='myPID') This is a paragraph, as well!
-    
-        div.myDiv.my2ndiv#mydivID
 
-        #myDivID
+        div(style={color: 'gray', background: 'black'})
 
+        form(action='', method='POST')
+            label(for='firstName') First Name:
+            input(type='text', name='firstName',
+            id='firstName')
 
+            label(for='lastName') Last Name:
+            input(type='text', name='lastName',
+            id='lastName')  
+
+            label(for='myList') Occupation:
+            select(id='myList', name='myList')
+                option(value='Designer') Designer
+                option(value='Coder') Coder
+
+            input(type='button', value='Submit')
 
         

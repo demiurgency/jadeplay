@@ -6,7 +6,18 @@
   <body>
     <h1>Hi Everyone</h1>
     <p class="myP" id="myPID">This is a paragraph, as well!</p>
-    <div class="myDiv my2ndiv" id="mydivID"></div>
-    <div id="myDivID"></div>
+    <div style="color:gray;background:black;"></div>
+    <form action="" method="POST">
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstName" id="firstName">
+      <label for="lastName">Last Name:</label>
+      <input type="text" name="lastName" id="lastName">
+      <label for="myList">Occupation:</label>
+      <select id="myList" name="myList">
+        <option value="Designer">Designer</option>
+        <option value="Coder">Coder</option>
+      </select>
+      <input type="button" value="Submit">
+    </form>
   </body>
 </html>
