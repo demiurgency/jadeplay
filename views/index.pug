@@ -1,39 +1,14 @@
-doctype html
-html
-    head
+extends ../layouts/layout.pug
+include ../includes/mixins.pug
+
+block headContent
         title Jade Playground
-    body
+block bodyContent
 
-        - var myTitle2 = 'Hey everyone!'
-        - var mySkills = ['PHP', 'MySQL', 'SASS']
-
-        if myTitle
-            h1 #{myTitle}
-            p(class='myP', id='myPID') This is a paragraph, as well!
-        else
-            h1 Aww, we have not title!
-
-        ul
-            each val in mySkills
-                li= val
-
-        mixin paragraph
-            p Hello
-
-        mixin paragraph2(myContent, id)
-            p(id=id)= myContent            
-
-        +paragraph
-
-        +paragraph2('Hey, how is it going?', 'myParaID')
-
-        div(style={color: 'gray', background: 'black'})
+        h1 My title
+        p(class='myP', id='myPID') This is a paragraph, as well!
 
         form(action='', method='POST')
-
-            mixin formText(textID, textValue)
-                label(for= textID)= textValue
-                input(type='text', name= textID, id=textID)
 
             +formText('firstName', 'First Name:')
 
@@ -44,6 +19,4 @@ html
                 option(value='Designer') Designer
                 option(value='Coder') Coder
 
-            input(type='button', value='Submit')
-
-        
+            input(type='button', value='Submit')        
