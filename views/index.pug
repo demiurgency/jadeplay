@@ -3,19 +3,41 @@ html
     head
         title Jade Playground
     body
-        h1 Hi Everyone
-        p(class='myP', id='myPID') This is a paragraph, as well!
+
+        - var myTitle2 = 'Hey everyone!'
+        - var mySkills = ['PHP', 'MySQL', 'SASS']
+
+        if myTitle
+            h1 #{myTitle}
+            p(class='myP', id='myPID') This is a paragraph, as well!
+        else
+            h1 Aww, we have not title!
+
+        ul
+            each val in mySkills
+                li= val
+
+        mixin paragraph
+            p Hello
+
+        mixin paragraph2(myContent, id)
+            p(id=id)= myContent            
+
+        +paragraph
+
+        +paragraph2('Hey, how is it going?', 'myParaID')
 
         div(style={color: 'gray', background: 'black'})
 
         form(action='', method='POST')
-            label(for='firstName') First Name:
-            input(type='text', name='firstName',
-            id='firstName')
 
-            label(for='lastName') Last Name:
-            input(type='text', name='lastName',
-            id='lastName')  
+            mixin formText(textID, textValue)
+                label(for= textID)= textValue
+                input(type='text', name= textID, id=textID)
+
+            +formText('firstName', 'First Name:')
+
+            +formText('lastName', 'Last Name:')
 
             label(for='myList') Occupation:
             select(id='myList', name='myList')
