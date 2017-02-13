@@ -4,7 +4,12 @@ html.no-js
         include includes/head.pug
         title Our Project
     body
+        
+        include includes/mixins.pug
 
-        h1 
+        .row#main-container
+            .medium-3.columns#left-bar
+
+            include includes/header.pug
 
         include includes/footer.pug
