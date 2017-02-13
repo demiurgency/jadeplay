@@ -1,2 +1,5 @@
-mixin mainNav
-    h1 test
+mixin mainNav()
+    ul#main-menu
+        for menuItem in menuItems
+            li(id=menuItem.itemId)
+                a(href= menuItem.itemLink)= menuItem.itemAnchor
