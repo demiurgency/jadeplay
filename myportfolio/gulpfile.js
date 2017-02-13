@@ -9,7 +9,6 @@ var gutil = require('gulp-util');
 var path = require('path');
 var data = require('gulp-data');
 
-
 app.use(express.static(path.resolve('./build')));
 
 app.listen('8000', function () {
@@ -42,7 +41,7 @@ gulp.task('images', function () {
 });
 
 gulp.task('js', function () {
-    gulp.src('js/*/**')
+    gulp.src('js/**')
         .pipe(gulp.dest('build/js'))
         .pipe(livereload())
 })
