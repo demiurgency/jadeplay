@@ -1435,3 +1435,105 @@ button {
 
 .long-delay {
   animation-delay: 0.7s !important; }
+
+body, html {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b8c6df+0,6d88b7+45,6d88b7+45,b8c6df+100 */
+  background: #b8c6df;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #b8c6df 0%, #6d88b7 45%, #6d88b7 45%, #b8c6df 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #b8c6df 0%, #6d88b7 45%, #6d88b7 45%, #b8c6df 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #b8c6df 0%, #6d88b7 45%, #6d88b7 45%, #b8c6df 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8c6df', endColorstr='#b8c6df',GradientType=0 );
+  /* IE6-9 */
+  height: 100%; }
+
+a, p, ul li, h1, h2 {
+  text-decoration: none;
+  font-family: 'Source Sans Pro'; }
+
+#main-container {
+  background: #2f2920;
+  margin-top: 30px;
+  border-radius: 7px; }
+
+#left-bar {
+  padding-left: 0; }
+
+#name, .sub-title {
+  text-align: center;
+  display: block; }
+
+#name {
+  font-size: 1.3em;
+  color: 40px;
+  font-weight: bold; }
+
+.sub-title {
+  color: #ababab;
+  margin-top: 0; }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+ul#main-menu {
+  margin: 50px 0; }
+
+ul#main-menu li a {
+  background: #2f2920;
+  display: block;
+  width: 100%;
+  margin-left: 10px;
+  color: #ababab;
+  padding: 10px 20px; }
+
+ul#main-menu li#about {
+  background: #5fcbb0; }
+
+ul#main-menu li#experience {
+  background: #cb5f83; }
+
+ul#main-menu li#portfolios {
+  background: #5f8dcb; }
+
+ul#main-menu li#hire {
+  background: #5fcbb0; }
+
+ul#main-menu li a:hover {
+  background: #493f43; }
+
+ul#social-menu li {
+  display: inline;
+  float: left;
+  width: 33%;
+  text-align: center; }
+
+#content {
+  background: #fff url(../images/bg.jpg) no-repeat;
+  min-height: 600px;
+  border-radius: 0px 7px 0px 0px; }
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.8em;
+  margin-top: 60px; }
+
+h2 {
+  text-transform: uppercase;
+  margin-top: 140px; }
+
+.skill-icons {
+  margin: 20px 0 40px 0; }
+
+ul.skills {
+  margin-bottom: 100px; }
+
+ul.skills li {
+  font-weight: bold;
+  color: #f63a4c; }

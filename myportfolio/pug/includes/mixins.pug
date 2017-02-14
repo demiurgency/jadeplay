@@ -3,3 +3,14 @@ mixin mainNav()
         for menuItem in menuItems
             li(id=menuItem.itemId)
                 a(href= menuItem.itemLink)= menuItem.itemAnchor
+
+mixin skillinfo(skillTitle, skillDesc, src)
+    h2= skillTitle
+    p= skillDesc
+
+    img.skill-icons(src=src)
+
+mixin skills(...items)
+    ul(class='skills')
+        each item in items
+            li= item

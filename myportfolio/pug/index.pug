@@ -10,6 +10,23 @@ html.no-js
         .row#main-container
             .medium-3.columns#left-bar
 
-            include includes/header.pug
+                include includes/header.pug
+
+            .medium-9.columns#content
+                h1 I'll help you reach your peak
+
+                .medium-6.columns
+                    +skillinfo(
+                    'Frontend',
+                    'I started out as a frontend guy about 15 years ago, fully equipped with Frontpage 98 and ready to rock the early internets.',
+                    'images/frontend-icons.png')
+                    +skills('HTML5', 'CSS3', 'JADE', 'SASS', 'STYLUS', 'JAVASCRIPT', 'ACTIONSCRIPT', 'XML')
+                
+                .medium-6columns
+                    +skillinfo(
+                    'Backend',
+                    'Out of necessity, I learned backend development while launching several internet-based businesses starting in 2002.',
+                    'images/backend-icons.png')
+                    +skills('PHP', 'RUBY', 'PYTHON', 'PERL', 'NODEJS', 'JAVA', 'MONGODB', 'MYSQL/NOSQL')
 
         include includes/footer.pug
